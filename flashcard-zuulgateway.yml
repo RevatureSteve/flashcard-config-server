@@ -8,3 +8,11 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://18.217.95.192:8761/eureka/
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

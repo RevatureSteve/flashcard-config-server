@@ -1,5 +1,5 @@
 server:
-  port: 1001
+  port: 8001
 spring:
     application:
         name: flashcard-service2
@@ -7,3 +7,5 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+    serviceUrl:
+      defaultZone: http://18.217.183.112:8761/eureka/

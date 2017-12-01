@@ -4,8 +4,7 @@ spring:
     application:
         name: flashcard-service
 eureka:
-    instance:
-        instance-id: ${spring.application.name}
+    
 #eureka is currently on an ec2, comment out serviceUrl for localhost eureka
 eureka:
   client:
@@ -14,3 +13,5 @@ eureka:
     serviceUrl:
       defaultZone: http://18.217.183.112:8761/eureka/
       # defaultZone: http://18.217.95.192:8761/eureka/
+  instance:
+        instance-id: ${spring.application.name}

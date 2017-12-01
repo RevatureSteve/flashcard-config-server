@@ -9,3 +9,5 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://18.217.183.112:8761/eureka/
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}

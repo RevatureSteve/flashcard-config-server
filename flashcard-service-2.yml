@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
     application:
-        name: flashcard-service2
+        name: flashcard-service-2
 eureka:
   client:
     register-with-eureka: true

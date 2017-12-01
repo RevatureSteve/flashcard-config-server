@@ -3,17 +3,15 @@ server:
 spring:
     application:
         name: flashcard-service
-    
-#eureka is currently on an ec2, comment out serviceUrl for localhost eureka
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
       defaultZone: http://${DOCKER_HOST_IP}:8761/eureka/
-    instance:
-       instanceId: ${spring.application.name}
-       hostname: ${DOCKER_HOST_IP}:${server.port}
+  instance:
+    instanceId: ${spring.application.name}
+    hostname: ${DOCKER_HOST_IP}:${server.port}
       # defaultZone: http://localhost:8761/eureka/
       # defaultZone: http://18.217.183.112:8761/eureka/
       # defaultZone: http://18.217.95.192:8761/eureka/

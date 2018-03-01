@@ -1,5 +1,5 @@
 server:
-  port: 8765
+  port: 8764
 
 #eureka is currently on an ec2, comment out serviceUrl for localhost eureka
 eureka:
